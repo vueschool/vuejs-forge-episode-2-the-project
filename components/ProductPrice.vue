@@ -1,9 +1,14 @@
 <script setup>
-defineProps({
+const props = defineProps({
   price: {
     type: Number,
     required: true,
   },
 });
+const pricePretty = computed(() => {
+  return !props.price ? "$0.00" : `$${(props.price / 100).toFixed(2)}`;
+});
 </script>
-<template>${{ price / 100 }}</template>
+<template>
+  <span>{{ pricePretty }}</span>
+</template>
