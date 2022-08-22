@@ -19,6 +19,7 @@ debouncedWatch(
 </script>
 <template>
   <div class="filters-wrapper flex gap-2 items-center">
+    <AppSpinner style="transform: translateY(15px)" v-if="loadingDebounced" />
     <div class="form-control">
       <label class="label" for="search">
         <span class="label-text">Search</span>
