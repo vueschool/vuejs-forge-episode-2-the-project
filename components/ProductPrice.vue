@@ -6,4 +6,4 @@ defineProps({
   },
 });
 </script>
-<template>${{ price / 100 }}</template>
+<template>${{ (price / 100).toFixed(2) }}</template>
