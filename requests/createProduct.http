@@ -1,0 +1,23 @@
+POST https://api.stripe.com/v1/products HTTP/1.1
+Authorization: Bearer {{$dotenv STRIPE_SECRET_KEY}}
+content-type: application/json
+
+{
+  "id": "cooking-course",
+  "object": "product",
+  "active": true,
+  "created": 1610920180,
+  "default_price": "price_1IAj7xHa8lRPAYxShPg1gwEm",
+  "description": "This is a course on cooking with all the stuffs needed to cook awesome food",
+  "images": [],
+  "livemode": false,
+  "metadata": {},
+  "name": "Gold Special",
+  "package_dimensions": null,
+  "shippable": null,
+  "statement_descriptor": null,
+  "tax_code": null,
+  "unit_label": null,
+  "updated": 1652290426,
+  "url": null
+}

@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.4",
+    "autoprefixer": "^10.4.8",
+    "nuxt": "3.0.0-rc.6",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "@formkit/nuxt": "^1.0.0-beta.10",
+    "@formkit/themes": "^1.0.0-beta.10",
+    "@formkit/vue": "^1.0.0-beta.10",
+    "@pinia/nuxt": "^0.3.1",
+    "@vueuse/core": "^9.1.0",
+    "contentful": "^9.1.33",
+    "daisyui": "^2.22.0",
+    "marked": "^4.0.18",
+    "pinia": "^2.0.18",
+    "stripe": "^10.3.0",
+    "uuid": "^8.3.2",
+    "vue": "^3.2.37"
+  }
+}

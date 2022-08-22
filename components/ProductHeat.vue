@@ -1,0 +1,13 @@
+<script setup>
+defineProps({
+  heatLevel: String,
+});
+const heatMap = {
+  Hot: "🔥🔥🔥",
+  Medium: "🔥🔥",
+  Mild: "🔥",
+};
+</script>
+<template>
+  {{ heatLevel ? heatMap[heatLevel] : "" }}
+</template>

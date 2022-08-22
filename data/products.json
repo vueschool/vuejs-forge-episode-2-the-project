@@ -1,0 +1,402 @@
+[
+  {
+    "metadata": { "tags": [] },
+    "sys": {
+      "space": {
+        "sys": { "type": "Link", "linkType": "Space", "id": "v7fvzlkum53d" }
+      },
+      "id": "3i0FygW932q7IVP4bivAdL",
+      "type": "Entry",
+      "createdAt": "2022-08-09T19:06:50.723Z",
+      "updatedAt": "2022-08-09T19:06:50.723Z",
+      "environment": {
+        "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": { "type": "Link", "linkType": "ContentType", "id": "product" }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Black Garlic And Carolina Reaper Hot Sauce",
+      "summary": "By Bravado Spice FEATURED ON HOT ONES Gluten Free, Vegan, Low Carb, Paleo Hot Sauce All Natural 5 oz Hot Sauce Bottle Award Winning Gourmet Hot Sauce ",
+      "price": 999,
+      "description": "- Vegan\n- Gluten-free\n- All natural\n- No added sugar\n- Made in Texas\n",
+      "heatLevel": "Hot",
+      "image": [
+        {
+          "metadata": { "tags": [] },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "v7fvzlkum53d"
+              }
+            },
+            "id": "34tLG4DpSj18iYjA0MFYPs",
+            "type": "Asset",
+            "createdAt": "2022-08-09T19:06:45.335Z",
+            "updatedAt": "2022-08-09T19:06:45.335Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Black Garlic And Carolina Reaper Hot Sauce ",
+            "file": {
+              "url": "//images.ctfassets.net/v7fvzlkum53d/34tLG4DpSj18iYjA0MFYPs/116adf2430995d80b1fe9fe851ab996d/51z9CpKZ9ZL._SX679_.jpeg",
+              "details": {
+                "size": 22883,
+                "image": { "width": 679, "height": 679 }
+              },
+              "fileName": "51z9CpKZ9ZL._SX679_.jpeg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "metadata": { "tags": [] },
+    "sys": {
+      "space": {
+        "sys": { "type": "Link", "linkType": "Space", "id": "v7fvzlkum53d" }
+      },
+      "id": "5ijmFfTSEqj0G8h73g3CrI",
+      "type": "Entry",
+      "createdAt": "2022-08-09T18:52:56.021Z",
+      "updatedAt": "2022-08-09T18:52:56.021Z",
+      "environment": {
+        "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": { "type": "Link", "linkType": "ContentType", "id": "product" }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Heartbeat Hot Sauce- Pineapple Habanero",
+      "summary": "6 oz- Small Batch & Handmade, Vegan, Preservative Free ",
+      "price": 1195,
+      "description": "\n- You will receive (1) 6 oz. bottles of Heartbeat Pineapple Habanero Hot Sauce. Featured on Hot Ones, Heartbeat Hot Sauce is all about the peppers. Heartbeat Hot Sauce's sweet and mild addition to the family.\n- Our most recent collaboration with an Ontario craft brewery, this time from our home town of Thunder Bay. Made with the help of Sleeping Giant Brewery*s award winning Beaver Duck session IPA, this sauce has a boldly pronounced fruitiness and a bright but savoury vibe from start to finish.\n- Expect a very approachable balance of heat and flavour, a Heartbeat signature characteristic!\n- This sweet and spicy vegan mix is made with Pineapple, Yellow Bell Pepper, Onion, Ale (Water, Hops, Malted Barley, Yeast) Distilled Vinegar, Habaneros, Lime Juice, Organic Cane Sugar, Kosher Salt, Garlic, and Canola Oil.\n- Enjoy in your favorite guacamole, on pizza, eggs, tacos, white bean soup, in cocktails, on your favorite sandwiches, spice up your marinades! Top off your nachos, spice up your steak and grilled chicken or just throw it back right out of the bottle, it's that good!\n",
+      "heatLevel": "Mild",
+      "image": [
+        {
+          "metadata": { "tags": [] },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "v7fvzlkum53d"
+              }
+            },
+            "id": "5vUkOQDUSZAKSwXByyeruQ",
+            "type": "Asset",
+            "createdAt": "2022-08-09T18:52:49.638Z",
+            "updatedAt": "2022-08-09T18:52:49.638Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Heartbeat Hot Sauce- Pineapple Habanero",
+            "description": "",
+            "file": {
+              "url": "//images.ctfassets.net/v7fvzlkum53d/5vUkOQDUSZAKSwXByyeruQ/8d503e499b0a9649a0165b399efbaeca/61N0eH6L6LL._SX679_.jpeg",
+              "details": {
+                "size": 15529,
+                "image": { "width": 679, "height": 679 }
+              },
+              "fileName": "61N0eH6L6LL._SX679_.jpeg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "metadata": { "tags": [] },
+    "sys": {
+      "space": {
+        "sys": { "type": "Link", "linkType": "Space", "id": "v7fvzlkum53d" }
+      },
+      "id": "3fnDoSexu2PM2VX4oPa6Tj",
+      "type": "Entry",
+      "createdAt": "2022-08-09T18:50:16.463Z",
+      "updatedAt": "2022-08-09T18:50:16.463Z",
+      "environment": {
+        "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": { "type": "Link", "linkType": "ContentType", "id": "product" }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Tampa Bay Hot Sauce Company",
+      "summary": "Hot Sauce Menage A Peppers, 5 Fl Oz ",
+      "price": 1099,
+      "description": "- Diet Type: Gluten Free\n- Vegan; Made without any animal products, including seafood, dairy, eggs or honey\n",
+      "heatLevel": "Medium",
+      "image": [
+        {
+          "metadata": { "tags": [] },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "v7fvzlkum53d"
+              }
+            },
+            "id": "202p5VFQYWmea7DlxE09fc",
+            "type": "Asset",
+            "createdAt": "2022-08-09T18:50:09.399Z",
+            "updatedAt": "2022-08-09T18:50:09.399Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Tampa Bay Hot Sauce Company",
+            "description": "",
+            "file": {
+              "url": "//images.ctfassets.net/v7fvzlkum53d/202p5VFQYWmea7DlxE09fc/42c2f8d621bdb57f45df99639c9f964e/61ZaGnIHY3L._SY879_.jpeg",
+              "details": {
+                "size": 33249,
+                "image": { "width": 232, "height": 879 }
+              },
+              "fileName": "61ZaGnIHY3L._SY879_.jpeg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "metadata": { "tags": [] },
+    "sys": {
+      "space": {
+        "sys": { "type": "Link", "linkType": "Space", "id": "v7fvzlkum53d" }
+      },
+      "id": "35sVQjPp20RwkmJLZOl9ou",
+      "type": "Entry",
+      "createdAt": "2022-08-09T18:47:26.389Z",
+      "updatedAt": "2022-08-09T18:47:26.389Z",
+      "environment": {
+        "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": { "type": "Link", "linkType": "ContentType", "id": "product" }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Elijah's Xtreme Regret Hot Sauce",
+      "summary": "Carolina Reaper and Trinidad Scorpion - The 2 Hottest Peppers in the World for an Extreme Fiery Heat ",
+      "price": 898,
+      "description": "- SMOKIN’ HOT Trinidad Scorpion and the WORLD'S HOTTEST Carolina Reaper peppers make up Elijah’s Xtreme - Xtreme Regret Hot Sauce. With SHUs of 800,000 - 1,600,000 respectively, it’s like a molten lava field washing over your taste buds\n- LEGENDARY Scorpion and Carolina Reaper peppers are the first to scientifically test over 1.6 million scovilles. These peppers are so hot that it will bring tears to your eyes, sweat to your head and warm you from the inside out\n- MOUTH STINGING Trinidad Scorpion peppers and the WORLDS HOTTEST PEPPER, Carolina Reaper Peppers and garlic provide a wonderful flavor for those who want to add flavor as well as heat to anything!\n- PERFECTLY BALANCED with a rich garlic flavor and 50% super hot peppers, Elijah’s Xtreme - Xtreme Regret Hot Pepper Sauce is the hottest, most flavorful hot sauce available. We use only the highest quality ingredients and processes for consistent potency\n- HANDCRAFTED father-and-son recipe gives your own chili, barbecued ribs and chicken wings a fiery, sweat-inducing kick and mouth watering sting. Fat-free, gluten-free and vegan-friendly for all your family and friends\n",
+      "heatLevel": "Hot",
+      "image": [
+        {
+          "metadata": { "tags": [] },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "v7fvzlkum53d"
+              }
+            },
+            "id": "1GbtrrFERMJ3gg11kCGs5w",
+            "type": "Asset",
+            "createdAt": "2022-08-09T18:47:13.246Z",
+            "updatedAt": "2022-08-09T18:47:13.246Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Elijah's Xtreme Regret Hot Sauce",
+            "description": "",
+            "file": {
+              "url": "//images.ctfassets.net/v7fvzlkum53d/1GbtrrFERMJ3gg11kCGs5w/bb8455b20c0c45f6708cb77743784a8b/81FNXXQ9UFL._SX679_.jpeg",
+              "details": {
+                "size": 24640,
+                "image": { "width": 679, "height": 679 }
+              },
+              "fileName": "81FNXXQ9UFL._SX679_.jpeg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "metadata": { "tags": [] },
+    "sys": {
+      "space": {
+        "sys": { "type": "Link", "linkType": "Space", "id": "v7fvzlkum53d" }
+      },
+      "id": "76sSqhi2XTMQy6UOkOiiqU",
+      "type": "Entry",
+      "createdAt": "2022-08-09T18:43:45.106Z",
+      "updatedAt": "2022-08-09T18:43:45.106Z",
+      "environment": {
+        "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": { "type": "Link", "linkType": "ContentType", "id": "product" }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Crystal Louisiana's Pure Hot Sauce",
+      "summary": "Original, 12 Ounce Glass Bottle ",
+      "price": 699,
+      "description": "Original Crystal Hot Sauce: A Louisiana favorite, this classic hot sauce is made with fresh ground aged cayenne peppers; with medium heat level which keeps the accent on flavor; Use it to season everything ",
+      "heatLevel": "Medium",
+      "image": [
+        {
+          "metadata": { "tags": [] },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "v7fvzlkum53d"
+              }
+            },
+            "id": "Jnnw6YaxgQqxky0lwbdzt",
+            "type": "Asset",
+            "createdAt": "2022-08-09T18:43:38.708Z",
+            "updatedAt": "2022-08-09T18:43:38.708Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Crystal Louisiana's Pure Hot Sauce",
+            "file": {
+              "url": "//images.ctfassets.net/v7fvzlkum53d/Jnnw6YaxgQqxky0lwbdzt/0d25e3bf87e01a8c6c61db8b619591be/71ads9UuwTS._SY879_.jpeg",
+              "details": {
+                "size": 45270,
+                "image": { "width": 293, "height": 879 }
+              },
+              "fileName": "71ads9UuwTS._SY879_.jpeg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "metadata": { "tags": [] },
+    "sys": {
+      "space": {
+        "sys": { "type": "Link", "linkType": "Space", "id": "v7fvzlkum53d" }
+      },
+      "id": "7spzDDm7qo0q23uEVwoTs8",
+      "type": "Entry",
+      "createdAt": "2022-08-09T18:41:47.506Z",
+      "updatedAt": "2022-08-09T18:41:47.506Z",
+      "environment": {
+        "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": { "type": "Link", "linkType": "ContentType", "id": "product" }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Rocky's Bacon Hot Sauce ",
+      "summary": "Gourmet Red Chili Sauce with Perfectly Balanced Heat – Great Hot Sauce Gift and Wing Sauce - 5 oz ",
+      "price": 1199,
+      "description": "ADDS AMAZING FLAVOR WITH HEAT - This sauce has a “bacony” flavor that will have you reminiscing about mornings gone by with friends and family around the kitchen table. You NEED this sauce for your breakfast favorites, of course, but it is also perfect for Mac ‘n’ Cheese, or to bring your wings to the next level! ",
+      "heatLevel": "Medium",
+      "image": [
+        {
+          "metadata": { "tags": [] },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "v7fvzlkum53d"
+              }
+            },
+            "id": "19PLDFZMM57HjJroEJZzxy",
+            "type": "Asset",
+            "createdAt": "2022-08-09T18:41:37.330Z",
+            "updatedAt": "2022-08-09T18:41:37.330Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Rocky's Bacon Hot Sauce",
+            "description": "",
+            "file": {
+              "url": "//images.ctfassets.net/v7fvzlkum53d/19PLDFZMM57HjJroEJZzxy/bddcb420fea7fdd051a8bb38100ead0e/718MlM9XOeL._SX679_.jpeg",
+              "details": {
+                "size": 48366,
+                "image": { "width": 679, "height": 679 }
+              },
+              "fileName": "718MlM9XOeL._SX679_.jpeg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ]
+    }
+  }
+]
