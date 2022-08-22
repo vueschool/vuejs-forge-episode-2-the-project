@@ -1,7 +1,6 @@
 import { defineStore, acceptHMRUpdate } from "pinia";
 export const useProductStore = defineStore("ProductStore", {
   state: () => {
-    // const route = useRoute();
     return {
       /**
        * The listing of all the products
@@ -12,9 +11,9 @@ export const useProductStore = defineStore("ProductStore", {
        * Different ways of fetching the listing of products (filters, order, search)
        */
       filters: {
-        "fields.heatLevel": "",
-        order: "",
-        query: "",
+        "fields.heatLevel": useRoute().query["fields.heatLevel"] || "",
+        order: useRoute().query.order || "",
+        query: useRoute().query.query || "",
       },
 
       /**
