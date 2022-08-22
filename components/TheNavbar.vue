@@ -2,6 +2,7 @@
 const { siteName } = useAppConfig();
 const deskree = useDeskree();
 const loggedInUser = computed(() => deskree.loggedInUser.value);
+const cartStore = useCartStore();
 </script>
 <template>
   <div class="navbar bg-base-100 shadow-md">
@@ -13,14 +14,16 @@ const loggedInUser = computed(() => deskree.loggedInUser.value);
     <!-- Right Side -->
     <div class="flex-none">
       <div class="dropdown dropdown-end">
-        <CartIcon :loading="false" :count="0" />
+        <CartIcon :loading="false" :count="cartStore.count" />
         <div
           tabindex="0"
           class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
         >
           <div class="card-body">
             <span class="font-bold text-lg">0 Items</span>
-            <span class="text-info">Subtotal: $0.00</span>
+            <span class="text-info"
+              >Subtotal: <ProductPrice :price="cartStore.subtotal" />
+            </span>
             <div class="card-actions">
               <NuxtLink :to="{ name: 'cart' }">
                 <button class="btn btn-primary btn-block">View cart</button>
