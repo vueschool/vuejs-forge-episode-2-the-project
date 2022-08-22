@@ -15,9 +15,6 @@ const { data: product } = await useAsyncData(
   }
 );
 
-const price = computed(() =>
-  product.value ? product.value?.fields?.price / 100 : null
-);
 const description = computed(() =>
   product.value ? marked.parse(product.value?.fields?.description) : null
 );
@@ -38,7 +35,8 @@ function handleAddToCart(product) {
         <div class="px-10 sm:pl-0 sm:w-2/3">
           <h1 class="text-2xl">{{ product?.fields.name }}</h1>
           <h2>
-            ${{ price }} <ProductHeat :heatLevel="product.fields.heatLevel" />
+            <ProductPrice :price="product.fields.price" />
+            <ProductHeat :heatLevel="product.fields.heatLevel" />
           </h2>
           <div class="prose prose-sm">
             <p>{{ product.fields.summary }}</p>

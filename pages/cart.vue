@@ -64,7 +64,9 @@ async function handleCheckout() {
                     </div>
                     <ProductHeat heat-level="Mild" />
                   </td>
-                  <td>$11.95</td>
+                  <td>
+                    <ProductPrice :price="1195" />
+                  </td>
 
                   <td>
                     <input
