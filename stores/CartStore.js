@@ -78,6 +78,7 @@ export const useCartStore = defineStore("CartStore", () => {
     addProduct,
   };
 });
+
 if (import.meta.hot) {
   import.meta.hot.accept(acceptHMRUpdate(useCartStore, import.meta.hot));
 }
