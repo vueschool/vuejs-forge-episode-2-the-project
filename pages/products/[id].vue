@@ -1,27 +1,28 @@
 <script setup>
-import * as marked from "marked";
-const route = useRoute();
-const productStore = useProductStore();
+  import * as marked from "marked";
+  const route = useRoute();
+  const productStore = useProductStore();
 
-const { data: product } = await useAsyncData(
-  `product${route.params.id}`,
-  async () => {
-    if (route.params.id === "undefined") return productStore.singleProduct;
-    await productStore.fetchProduct(route.params.id);
-    return productStore.singleProduct;
-  },
-  {
-    pick: ["fields", "sys"],
+  const { data: product } = await useAsyncData(
+    `product${route.params.id}`,
+    async () => {
+      if (route.params.id === "undefined") return productStore.singleProduct;
+      await productStore.fetchProduct(route.params.id);
+      return productStore.singleProduct;
+    },
+    {
+      pick: ["fields", "sys"],
+    }
+  );
+
+  const description = computed(() =>
+    product.value ? marked.parse(product.value?.fields?.description) : null
+  );
+
+  function handleAddToCart(product) {
+    useCartStore().addProduct(product, 1);
+    useAlertsStore().success(product.fields.name + " added to cart");
   }
-);
-
-const description = computed(() =>
-  product.value ? marked.parse(product.value?.fields?.description) : null
-);
-
-function handleAddToCart(product) {
-  useAlertsStore().success(product.fields.name + " added to cart");
-}
 </script>
 <template>
   <div class="mt-10 max-w-6xl mx-auto">
