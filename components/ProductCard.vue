@@ -14,7 +14,9 @@
         <ProductHeat :heatLevel="product.fields.heatLevel" />
       </div>
       <small>
-        <div class="absolute top-0 right-0 p-1 badge badge-outline">
+        <div
+          class="absolute top-0 right-5 px-2 py-0.5 text-sm font-medium badge badge-outline"
+        >
           <ProductPrice :price="product.fields.price" />
         </div>
       </small>
