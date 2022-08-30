@@ -1,6 +1,40 @@
-<script setup>
+<script setup lang="ts">
+import {ref, watch} from "vue"
+import {debouncedWatch} from "@vueuse/core";
 const productStore = useProductStore();
 const filters = computed(() => productStore.filters);
+const router = useRoute();
+const { fetchProducts } = useProductStore();
+
+watch(filters.value, async () => {
+    const query = ref({
+    'fields.heatLevel':filters.value[`fields.heatLevel`] || undefined,
+    'order':filters.value[`order`] || undefined,
+    'query':filters.value[`query`] || undefined,
+  })
+  useRouter().push({name:"index",query: query.value});
+  await fetchProducts();
+  } ,{deep:true})
+
+// debouncedWatch(
+//     filters.value,
+//     async () => {
+//       useRoute().push({ query: filters.value });
+//       await fetchProducts();
+//     },
+//     { deep: true, debounce: 200 }
+// );
+
+// const search = async () => {
+//   console.log(filters.value)
+//   const query = ref({
+//     'fields.heatLevel':filters.value[`fields.heatLevel`] || undefined,
+//     'order':filters.value[`order`] || undefined,
+//     'query':filters.value[`query`] || undefined,
+//   })
+//   useRouter().push({name:"index",query: query.value});
+//   await fetchProducts()
+// }
 </script>
 <template>
   <div class="filters-wrapper flex gap-2 items-center">
