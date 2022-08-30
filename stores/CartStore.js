@@ -1,9 +1,14 @@
 import { defineStore, acceptHMRUpdate } from "pinia";
+import { watchDebounced } from "@vueuse/core";
 
 export const useCartStore = defineStore("CartStore", () => {
+  const deskree = useDeskree();
+
   // state
   const products = ref([]);
   const taxRate = 0.1;
+  const isFirstLoad = ref(false);
+  const loading = ref(false);
 
   // getters
   const count = computed(() => products.value.length);
@@ -37,20 +42,42 @@ export const useCartStore = defineStore("CartStore", () => {
     }
     return count;
   }
+  // triggers
+  // init data
+  deskree.auth.onAuthStateChange(async (user) => {
+    isFirstLoad.value = true;
+    loading.value = true;
+    const res = await deskree.user.getCart();
+    res.products.forEach((product) => addProduct(product, product.count));
+    loading.value = false;
+    setTimeout(() => (isFirstLoad.value = false), 1000);
+  });
+
+  // update data whenever products change
+  watchDebounced(
+    products,
+    async () => {
+      if (isFirstLoad.value) return;
+      if (!deskree.user.get()) return;
+      await deskree.user.updateCart(products.value);
+    },
+    {
+      debounce: 500,
+      deep: true,
+    }
+  );
 
   return {
     products,
     taxRate,
-    count,
-    isEmpty,
     subtotal,
     taxTotal,
     total,
+    loading,
     removeProducts,
     addProduct,
   };
 });
-
 if (import.meta.hot) {
   import.meta.hot.accept(acceptHMRUpdate(useCartStore, import.meta.hot));
 }
