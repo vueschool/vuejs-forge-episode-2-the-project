@@ -1,6 +1,6 @@
 <script setup>
-const productStore = useProductStore();
-useAsyncData("products", async () => productStore.fetchProducts());
+  const productStore = useProductStore();
+  useAsyncData("products", async () => productStore.fetchProducts());
 </script>
 <template>
   <div>
@@ -27,19 +27,19 @@ useAsyncData("products", async () => productStore.fetchProducts());
 </template>
 
 <style>
-.product-card {
-  transition: all 0.5s ease-in-out;
-}
-.products-enter-from {
-  transform: scale(0.5) translatey(-80px);
-  opacity: 0;
-}
-.products-leave-to {
-  transform: translatey(30px);
-  opacity: 0;
-}
-.products-leave-active {
-  position: absolute;
-  z-index: -1;
-}
+  .product-card {
+    transition: all 0.5s ease-in-out;
+  }
+  .products-enter-from {
+    transform: scale(0.5) translatey(-80px);
+    opacity: 0;
+  }
+  .products-leave-to {
+    transform: translatey(30px);
+    opacity: 0;
+  }
+  .products-leave-active {
+    position: absolute;
+    z-index: -1;
+  }
 </style>
