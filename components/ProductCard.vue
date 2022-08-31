@@ -1,7 +1,7 @@
 <script setup lang="ts">
-defineProps<{
-  product: any;
-}>();
+  defineProps<{
+    product: any;
+  }>();
 </script>
 
 <template>
@@ -10,9 +10,17 @@ defineProps<{
     :to="{ name: 'products-id', params: { id: product.sys.id } }"
   >
     <div class="card h-full bg-base-100 shadow-xl relative">
-      <div class="absolute top-0 right-0 p-5">
+      <div class="absolute top-0 left-5 p-2">
         <ProductHeat :heatLevel="product.fields.heatLevel" />
       </div>
+      <small>
+        <div
+          class="absolute top-0 right-5 px-2 py-0.5 text-sm font-medium badge badge-outline"
+        >
+          <ProductPrice :price="product.fields.price" />
+        </div>
+      </small>
+
       <figure>
         <img
           :src="product.fields.image[0].fields?.file.url"
@@ -20,14 +28,11 @@ defineProps<{
         />
       </figure>
       <div class="card-body">
-        <h2 class="justify-between flex">
-          <span class="w-3/5"> {{ product.fields.name }} </span>
-          <small class="w-2/5 p-1 badge badge-outline">
-            <ProductPrice :price="product.fields.price" />
-          </small>
-        </h2>
+        <h1 class="justify-between flex">
+          <span class="w-5/5"> {{ product.fields.name }} </span>
+        </h1>
         <p
-          class="text-sm max-h-5 overflow-ellipsis overflow-hidden whitespace-nowrap"
+          class="text-sm max-h-5 font-light overflow-ellipsis overflow-hidden whitespace-nowrap"
         >
           {{ product.fields.summary }}
         </p>
@@ -40,9 +45,13 @@ defineProps<{
 </template>
 
 <style scoped>
-img {
-  width: 100%;
-  height: 200px;
-  object-fit: contain;
-}
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
 </style>
