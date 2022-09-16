@@ -1,4 +1,6 @@
 import { defineStore, acceptHMRUpdate } from "pinia";
+import * as contentful from "contentful";
+
 export const useProductStore = defineStore("ProductStore", {
   state: () => {
     // const route = useRoute();
@@ -34,8 +36,11 @@ export const useProductStore = defineStore("ProductStore", {
   },
   actions: {
     async fetchProducts() {
-      const res = await $fetch("/api/products");
-      this.products = res;
+      const {$contentful} = useNuxtApp();
+      const productsFound = await $contentful.getEntries({
+        content_type: "product"
+      });
+      this.products = productsFound.items;
       return this.products;
     },
     async fetchProduct(id) {
