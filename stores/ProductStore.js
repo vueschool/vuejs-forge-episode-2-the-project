@@ -1,4 +1,6 @@
 import { defineStore, acceptHMRUpdate } from "pinia";
+import * as contentful from "contentful";
+
 export const useProductStore = defineStore("ProductStore", {
   state: () => {
     // const route = useRoute();
@@ -25,17 +27,25 @@ export const useProductStore = defineStore("ProductStore", {
   },
   getters: {
     activeFilters() {
+      // TODO Note : stringify and parse is a hack to create clones. And Objects.entries, and Objects.fromEntries helps you interact with 
+      // objects as arrays and easily access their attributes. 
       const clone = JSON.parse(JSON.stringify(this.filters));
       // remove blank object properties
       return Object.fromEntries(
+        // TODO Note : The underscore just means I don't care what's in their, I just want to loop through them
         Object.entries(clone).filter(([_, v]) => v != null)
       );
     },
   },
   actions: {
     async fetchProducts() {
-      const res = await $fetch("/api/products");
-      this.products = res;
+      // TODO read through the documentation of the contentful API to understand it better 
+      const {$contentful} = useNuxtApp();
+      const productsFound = await $contentful.getEntries({
+        content_type: "product",
+        ...this.activeFilters,
+      });
+      this.products = productsFound.items;
       return this.products;
     },
     async fetchProduct(id) {
