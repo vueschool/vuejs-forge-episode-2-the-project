@@ -1,6 +1,9 @@
 <script setup>
 const productStore = useProductStore();
 const filters = computed(() => productStore.filters);
+watch(filters, (newFilters) => {
+  productStore.fetchProducts();
+}, { deep: true });
 </script>
 <template>
   <div class="filters-wrapper flex gap-2 items-center">
